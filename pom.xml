@@ -16,7 +16,6 @@
         <module>spring-mybatis-core</module>
         <module>spring-mybatis-dal</module>
         <module>spring-mybatis-manage</module>
-        <module>spring-mybatis-web</module>
         <module>spring-mybatis-task</module>
         <module>spring-mybatis-integration</module>
         <module>spring-mybatis-web</module>
