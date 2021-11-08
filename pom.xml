@@ -15,7 +15,7 @@
         <module>spring-mybatis-common</module>
         <module>spring-mybatis-core</module>
         <module>spring-mybatis-dal</module>
-        <module>spring-mybatis-manage</module>
+        <module>spring-mybatis-manager</module>
         <module>spring-mybatis-task</module>
         <module>spring-mybatis-integration</module>
         <module>spring-mybatis-web</module>
@@ -68,6 +68,66 @@
 
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>spring-mybatis-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>spring-mybatis-biz</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>spring-mybatis-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>spring-mybatis-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>spring-mybatis-dal</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>spring-mybatis-intergration</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>spring-mybatis-manager</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>spring-mybatis-service</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>spring-mybatis-task</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>spring-mybatis-web</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
             <!-- kafka -->
             <dependency>
                 <groupId>org.springframework.kafka</groupId>

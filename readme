@@ -1,0 +1,5 @@
+
+1、添加web.xml，并填写内容。
+module界面，web层新增web类型，并填写Deployment Descriptor和Web Resource Directories
+web.xml中填写对应的配置，包括servlet（包括初始化配置文件application.xml）、welcome file。
+2、
