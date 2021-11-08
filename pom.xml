@@ -379,9 +379,11 @@
             </plugin>
 
 <!--            编译项目会报错，原因待定-->
-<!--            <plugin>
+<!--            改为3.2.0之后可以编译通过-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
-                <version>2.1</version>
+                <version>3.2.0</version>
                 <configuration>
                     <attach>true</attach>
                 </configuration>
@@ -393,7 +395,7 @@
                         </goals>
                     </execution>
                 </executions>
-            </plugin>-->
+            </plugin>
 
             <!--使用maven-enforcer插件解决多版本jar包冲突隐患 命令：mvn  -U clean validate-->
             <plugin>
