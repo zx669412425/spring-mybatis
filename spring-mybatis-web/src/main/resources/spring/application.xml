@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:tx="http://www.springframework.org/schema/tx" xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+    http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+    http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+    http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+    http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
+
+<!--    在指定的package下扫描以及注册javabean-->
+    <context:component-scan base-package="com.zx" />
+<!--    隐式地向 Spring容器注册AutowiredAnnotationBeanPostProcessor、RequiredAnnotationBeanPostProcessor、
+    CommonAnnotationBeanPostProcessor以及PersistenceAnnotationBeanPostProcessor这4个BeanPostProcessor-->
+<!--    有了component-scan后可以省略-->
+    <context:annotation-config/>
+<!--    属性占位符-->
+    <context:property-placeholder location="" />
+<!--    dubbo生产者-->
+    <import resource="1.xml" />
+<!--    dubbo消费者-->
+    <import resource="1.xml" />
+<!--    数据源配置-->
+    <import resource="1.xml" />
+<!--    Redis配置-->
+    <import resource="1.xml" />
+<!--    定时任务-->
+    <import resource="1.xml" />
+<!--    kafka生产者-->
+    <import resource="1.xml" />
+<!--    kafka消费者-->
+    <import resource="1.xml" />
+
+</beans>
