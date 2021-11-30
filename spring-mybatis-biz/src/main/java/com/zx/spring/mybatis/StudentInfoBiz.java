@@ -1,5 +1,8 @@
 package com.zx.spring.mybatis;
 
+import com.zx.spring.mybatis.model.StudentInfoBO;
+import org.springframework.beans.factory.annotation.Autowired;
+
 /**
  * <p>
  *
@@ -12,8 +15,18 @@ package com.zx.spring.mybatis;
  */
 public class StudentInfoBiz {
 
-    public String addStudentInfo(){
-        return null;
+    @Autowired
+    StudentInfoCore studentInfoCore;
+
+    public String addStudentInfo(StudentInfoBO studentInfoBO){
+        String s ;
+        try{
+            studentInfoCore.addStudentInfo(studentInfoBO);
+            s = "success";
+        }catch (Exception e){
+            return "fail";
+        }
+        return s;
     }
 
     public String modifyStudentInfo(){
