@@ -2,6 +2,7 @@ package com.zx.spring.mybatis;
 
 import com.zx.spring.mybatis.model.StudentInfoBO;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  * <p>
@@ -13,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @Date: 2021/11/17/0017 22:17
  * @Version 1.0
  */
+@Service
 public class StudentInfoBiz {
 
     @Autowired

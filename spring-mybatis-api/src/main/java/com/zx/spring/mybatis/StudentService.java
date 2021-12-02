@@ -1,5 +1,9 @@
 package com.zx.spring.mybatis;
 
+
+import com.zx.spring.mybatis.requestDTO.AddStudentInfoReqDTO;
+import com.zx.spring.mybatis.responseDTO.Result;
+
 /**
  * <p>
  *
@@ -12,9 +16,9 @@ package com.zx.spring.mybatis;
  */
 public interface StudentService {
 
-    public String addStudentInfo();
+    Result<String> addStudentInfo(AddStudentInfoReqDTO addStudentInfoReqDTO);
 
-    public String modifyStudentInfo();
+    String modifyStudentInfo();
 
 
 
