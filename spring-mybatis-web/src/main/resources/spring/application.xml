@@ -14,14 +14,14 @@
 
 <!--    在指定的package下扫描以及注册javabean-->
     <context:component-scan base-package="com.zx.spring.mybatis" />
-<!--    隐式地向 Spring容器注册AutowiredAnnotationBeanPostProcessor、RequiredAnnotationBeanPostProcessor、
-    CommonAnnotationBeanPostProcessor以及PersistenceAnnotationBeanPostProcessor这4个BeanPostProcessor-->
-<!--&lt;!&ndash;    有了component-scan后可以省略&ndash;&gt;-->
-<!--    <context:annotation-config/>-->
-<!--&lt;!&ndash;    属性占位符&ndash;&gt;-->
-<!--    <context:property-placeholder location="" />-->
-<!--&lt;!&ndash;    dubbo生产者&ndash;&gt;-->
-<!--    <import resource="1.xml" />-->
+<!--    隐式地向 Spring容器注册AutowiredAnnotationBeanPostProcessor、RequiredAnnotationBeanPostProcessor、-->
+<!--    CommonAnnotationBeanPostProcessor以及PersistenceAnnotationBeanPostProcessor这4个BeanPostProcessor-->
+<!--    有了component-scan后可以省略-->
+    <context:annotation-config/>
+<!--    属性占位符-->
+    <context:property-placeholder location="application.properties" />
+<!--    dubbo生产者-->
+    <import resource="spring-datasource.xml" />
 <!--&lt;!&ndash;    dubbo消费者&ndash;&gt;-->
 <!--    <import resource="1.xml" />-->
 <!--&lt;!&ndash;    数据源配置&ndash;&gt;-->

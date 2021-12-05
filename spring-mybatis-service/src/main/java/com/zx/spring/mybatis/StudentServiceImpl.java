@@ -6,6 +6,7 @@ import com.zx.spring.mybatis.model.StudentInfoBO;
 import com.zx.spring.mybatis.requestDTO.AddStudentInfoReqDTO;
 import com.zx.spring.mybatis.responseDTO.Result;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  * <p>
@@ -17,6 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @Date: 2021/11/14/0014 13:38
  * @Version 1.0
  */
+@Service
 public class StudentServiceImpl implements StudentService {
 
     @Autowired

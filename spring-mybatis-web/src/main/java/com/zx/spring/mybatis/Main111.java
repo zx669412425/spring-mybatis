@@ -1,3 +1,5 @@
+package com.zx.spring.mybatis;
+
 /**
  * <p>
  *

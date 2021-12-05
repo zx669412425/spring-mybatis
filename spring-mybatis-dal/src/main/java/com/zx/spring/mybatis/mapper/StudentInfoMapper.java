@@ -1,6 +1,7 @@
 package com.zx.spring.mybatis.mapper;
 
 import com.zx.spring.mybatis.model.StudentInfoDO;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Component;
 
 /**
@@ -16,7 +17,7 @@ import org.springframework.stereotype.Component;
 @Component
 public interface StudentInfoMapper {
 
-    public long addStudentInfo(StudentInfoDO studentInfoDO);
+    public long addStudentInfo(@Param("studentInfoDO") StudentInfoDO studentInfoDO);
 
     public String modifyStudentInfo(int id);
 }

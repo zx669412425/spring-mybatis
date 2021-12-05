@@ -1,5 +1,6 @@
 package com.zx.spring.mybatis.impl;
 
+import com.zx.spring.mybatis.A;
 import com.zx.spring.mybatis.convert.StudentInfoConverter;
 import com.zx.spring.mybatis.mapper.StudentInfoMapper;
 import com.zx.spring.mybatis.model.StudentInfoBO;
@@ -21,6 +22,8 @@ public class StudentInfoManager {
 
     @Autowired
     private StudentInfoMapper studentInfoMapper;
+
+    private A a;
 
     public long addStudentInfo(StudentInfoBO studentInfoBO) {
         return studentInfoMapper.addStudentInfo(

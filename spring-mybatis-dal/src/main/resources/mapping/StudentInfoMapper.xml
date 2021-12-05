@@ -2,8 +2,31 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.zx.spring.mybatis.mapper.StudentInfoMapper">
 
-    <insert id="addStudentInfo">
-
+    <insert id="addStudentInfo" parameterType="com.zx.spring.mybatis.model.StudentInfoDO">
+        insert into
+            student
+        (
+            NAME ,
+            PHONE ,
+            AGE ,
+            SEX ,
+            HEIGHT,
+            WEIGHT ,
+            REGISTER_DATE ,
+            REMARKS ,
+            ADDRESS ,
+        )
+        values(
+                #{studentInfoDO.name,jdbcType = VARCHAR},
+                #{studentInfoDO.phone,jdbcType = VARCHAR},
+                #{studentInfoDO.age,jdbcType = VARCHAR},
+                #{studentInfoDO.sex,jdbcType = VARCHAR},
+                #{studentInfoDO.height,jdbcType = VARCHAR},
+                #{studentInfoDO.weight,jdbcType = VARCHAR},
+                #{studentInfoDO.registerDate,jdbcType = VARCHAR},
+                #{studentInfoDO.remarks,jdbcType = VARCHAR},
+                #{studentInfoDO.address,jdbcType = VARCHAR},
+              )
 
     </insert>
 
